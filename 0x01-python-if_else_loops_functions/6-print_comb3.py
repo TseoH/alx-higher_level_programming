@@ -4,6 +4,6 @@ for i in range(0, 9):
         if x == i:
             continue
         elif i == 8 and x == 9:
-            print(f'{i:d}{x:d}')
+            print('{:d}{:d}'.format(i, x))
         else:
-            print(f'{i:d}{x:d}', end=', ')
+            print('{:d}{:d}'.format(i, x), end=', ')
