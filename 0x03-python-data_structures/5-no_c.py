@@ -2,6 +2,8 @@
 
 def no_c(my_string):
     new_string = ''
+    if len(my_string) == 0:
+        return new_string
     for c in my_string:
         if c is not 'c' and c is not 'C':
             new_string += c
