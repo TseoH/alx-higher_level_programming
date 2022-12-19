@@ -1,16 +1,11 @@
 #!/usr/bin/python3
 
-def safe_print_list_integers(my_list=None, x=0):
-    if my_list is None:
-        my_list = []
+def safe_print_list_integers(my_list=[], x=0):
     list_len = 0
-    for i in range(x):
+    for i in range(0, x):
         try:
-            value = int(my_list[i])
-            print("{:d}".format(value))
+            print("{:d}".format(my_list[i]))
             list_len += 1
-        except ValueError:
+        except (ValueError, TypeError):
             continue
-        except IndexError:
-            break
     return list_len
