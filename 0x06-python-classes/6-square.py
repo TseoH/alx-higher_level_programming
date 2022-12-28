@@ -1,8 +1,15 @@
 #!/usr/bin/python3
+"""Define a class Square."""
+
 
 class Square:
 
     def __init__(self, size=0, position=(0, 0)):
+        """Initialize Square Instance
+        Args:
+            size (int): Square size
+            position (tuple): Square position
+        """
         self.__position = position
         self.__size = size
 
@@ -32,9 +39,16 @@ class Square:
         self.__position = value
 
     def area(self):
+        """
+        Méthode qui retourne l'aire du carré.
+
+        Returns :
+            int : l'aire du carré.
+        """
         return self.__size * self.__size
 
     def my_print(self):
+        """Print method"""
         if self.__size == 0:
             print("")
             return
