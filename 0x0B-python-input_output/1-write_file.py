@@ -6,4 +6,4 @@
 def write_file(filename="", text=""):
     """Code here"""
     with open(filename, 'w', encoding='utf8') as f:
-        f.write(text)
+        return f.write(text)
