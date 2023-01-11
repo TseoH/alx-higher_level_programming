@@ -5,13 +5,8 @@
 
 class Student:
     """Code here"""
-
-    first_name = None
-    last_name = None
-    age = None
-
-    def __int__(self, first_name, last_name, age):
-        """Code here 2"""
+    def __init__(self, first_name, last_name, age):
+        """Initialize a new Student"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
