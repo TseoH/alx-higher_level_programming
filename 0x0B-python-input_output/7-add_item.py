@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """File json function"""
 import sys
 
