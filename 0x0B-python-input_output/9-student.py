@@ -6,6 +6,10 @@
 class Student:
     """Code here"""
 
+    first_name = None
+    last_name = None
+    age = None
+
     def __int__(self, first_name, last_name, age):
         """Code here 2"""
         self.first_name = first_name
